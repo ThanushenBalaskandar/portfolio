@@ -1,11 +1,16 @@
 import React from 'react';
 import Part1 from './Component/part1'
-//import logo from './../logo.svg';
+import Part2 from './Component/part2'
 import './../css/App.css';
+import Part3 from './Component/part3';
 
 function App() {
   return (
-    <Part1 />
+    <div>
+      <Part1 />
+      <Part2 />
+      <Part3 />
+    </div>
   );
 }
 

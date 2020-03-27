@@ -1,17 +1,20 @@
 body {
   background-color:black;
+  z-index: 0;
 }
 
 body:after {
+  pointer-events: none;
   animation: grain 8s steps(10) infinite;
   background-image: url("https://i.stack.imgur.com/9QjJ8.jpg");
   content: "";
   height: 310%;
   left: -50%;
-  opacity: 0.15;
+  opacity: 0.055;
   position: fixed;
   top: -120%;
   width: 310%;
+  z-index: 0;
 }
 
 @keyframes grain {
