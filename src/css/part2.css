@@ -18,17 +18,39 @@
   filter: grayscale(100%);
 }
 
+.accheader {
+  background-color: black;
+  border: black;
+}
+
+.card {
+  background-color: black;
+  color: white;
+}
+
+.tog {
+  background-color: black;
+  border: black;
+}
+
+.tog:active, .tog:focus {
+  outline: none;
+}
 
 #box {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    bottom: 10px;
     width: 100px;
     height: 100px;
     color: white;
     font-family: 'Raleway';
     font-size: 2.5rem;
   }
+
   .gradient-border {
     --borderWidth: 3px;
     background: #1D1F20;
@@ -79,7 +101,67 @@
     overflow: hidden;
     background-color: #f1f1f1;
   }
+
+  .colapText {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .cbody {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .colapText {
+      margin: 0 auto;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .text-title {
+      font-size: 55px;
+  }
+  }
+
+  .example_d {
+    font-size: 30px;
+    color: #494949 !important;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: black;
+    padding: 0px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    height: 0px;
+    width: 100vw;
+}
+
+.example_d:active ,example_d:focus {
+  color: white !important;
+    background: palevioletred;
+    border-color: palevioletred	 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.example_d:hover {
+    color: white !important;
+    background: palevioletred;
+    border-color: palevioletred	 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.keylist {
+  text-align: left;
+}
   
+#keyskills {
+  margin-bottom: 10px;
+}
+
   
   @keyframes animatedgradient {
       0% {

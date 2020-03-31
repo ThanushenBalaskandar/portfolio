@@ -11,8 +11,16 @@
 .text-title {
     font-size: 99px;
     margin:0 auto;
+    display: inline-block;
     position: relative;
     opacity: 70%;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+}
+
+.text-title:hover {
+    opacity: 100%;
+    transition: all 0.2s ease 0s;
 }
 
 .details-row {
@@ -23,6 +31,7 @@
     font-size: 22.5px;
     margin:0 auto;
     position: relative;
+    text-align: center;
     opacity: 55%;
 }
 
@@ -79,3 +88,9 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media only screen {
+    .text-title {
+        font-size: 70px;
+    }
+  }
